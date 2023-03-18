@@ -1,0 +1,25 @@
+body {
+  background-color: silver;
+}
+#the-one {
+  color: red;
+  border: 1px solid black;
+}
+
+.evidentiat {
+  color: blue;
+  font-weight: bold;
+}
+
+li {
+  /*tuturor elementelor de un tip = folosim tag-ul*/
+  font-size: 18px;
+  color: green;
+}
+/* Sorrend: 
+- legalsobb rendu a tag = "li" (vagyos aminek nincs sem class sem id)
+- class (mai multor taguri)
+- id (unic)
+*/
+
+/*stilizare text*/

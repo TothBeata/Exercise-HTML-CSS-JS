@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<!--versiune html = 5-->
+<html lang="en">
+
+<head>
+    <!--meta informatii = nu sunt vizibile in pg-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--controleaza modul in care apare pg pe device-ri mobile-->
+    <title>Prima pagina</title>
+    <link rel="stylesheet" href="style.css">
+    <!--legatura cu CSS-->
+</head>
+
+<body>
+    <!--totul apare in pg-->
+    <h1>Titlu h1</h1>
+    <h2>Titlu h2</h2>
+    <h3>Titlu h3</h3>
+    <h4>Titlu h4</h4>
+    <h5>Titlu h5</h5>
+    <h6>Titlu h6</h6>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur quisquam at laudantium nostrum beatae modi
+        aliquid. Temporibus voluptate commodi eius et natus cumque quidem eligendi at? Fuga natus odit eligendi?</p>
+    <ol type="I">
+        <!--type=cifre romane-->
+        <!--ol = lista ordonata/numerotata-->
+        <li>item 1</li>
+        <li>item 2</li>
+        <li>item 3</li>
+    </ol>
+
+    <!--linie separator-->
+    <hr>
+
+
+    <ul type="cercel">
+        <!--type=modificam: patrat, cerc, none-->
+        <li>element 1</li>
+        <li class="evidentiat">element 2</li>
+        <li id="the-one" class="evidentiat">element 3</li>
+        <li class="evidentiat">element 4</li>
+        <li>element 5</li>
+        <li>element 6</li>
+    </ul>
+
+    <img src="pisi.jpg" alt="aici lipseste poza" width="300px">
+
+    <hr>
+
+    <!--Link catre alta pagina-->
+    <a href="https://google.com">Goole</a>
+    <a href="https://www.udemy.com/course/curs-complet-htmlcss-pentru-incepatori/">Udemy</a>
+    <!--Link catre alta pagina html creata de mine-->
+    <a href="indexLink.html" target="_blank">PaginaHTML</a>
+
+    <hr>
+
+    <!--Inserare video/audio-->
+    <video controls>
+        <!--controls = buton sunet si pauza-->
+        <source src="mov_bbb.mp4" type="video/mp4">
+        <source src="mov_bbb.ogg" type="video.ogg">
+        Your browser does not support video tag
+    </video>
+
+    <hr>
+
+    <audio controls>
+        <source src="horse.ogg" type="audio/ogg">
+        <source src="horse.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <br> linie noua 'br'=break
+
+    <pre>
+        tag 'pre'scrie in linie 
+    Romania
+    Sibiu
+    str.Independentei nr. 1
+    </pre>
+
+    <!--Stilizare text-->
+    <style>
+        html {
+            font-size: 8px;
+            /* pentru imagine de fundal*/
+            background-image: url(""), url("");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-attachment: scroll;
+
+        }
+
+        p {
+            color: rgb(95, 60, 3);
+            text-align: justify;
+            font-size: 2rem;
+            /* 2rem relativ fata de html font-size: 14px*/
+            font-family: 'Courier New', Courier, monospace;
+            font-weight: bold;
+            text-decoration: none;
+        }
+    </style>
+    <p>Text 1</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium aspernatur doloribus recusandae fugiat sed
+        dicta nemo non maxime harum molestias minima quod, cum dolores aut temporibus, eveniet tempora a quibusdam
+        repellat. Debitis dolorum natus inventore nisi ipsam id maxime minus quia iusto numquam assumenda explicabo
+        voluptates possimus, distinctio error nostrum? Velit fuga adipisci quidem quo omnis? Labore est molestiae qui?
+        Ad ipsum optio cumque nulla ullam assumenda, explicabo, alias recusandae quasi consequatur et dolore tempore.
+        Mollitia vel, magni autem optio explicabo ut aspernatur alias nemo nobis maxime ea eligendi ipsum, minima
+        temporibus quasi pariatur aperiam inventore ratione delectus tempore quia.
+    </p>
+
+
+
+
+
+
+
+
+</body>
+
+</html>
