@@ -1,0 +1,178 @@
+body {
+  margin: 0;
+  height: 100vh;
+  background: url(./images/imgBackground.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+#btn-container {
+  width: 100%;
+}
+
+.bt-start-game {
+  margin: 50px auto 0;
+  display: block;
+  padding: 10px 30px;
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+  background: rgba(220, 220, 220, 0.616);
+  color: black;
+  font-family: Georgia, serif;
+  font-size: 25px;
+  letter-spacing: 2px;
+  word-spacing: 2px;
+  color: #000000;
+  font-weight: normal;
+  text-decoration: none;
+  font-style: normal;
+  font-variant: small-caps;
+  text-transform: uppercase;
+  -webkit-box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000,
+    5px 5px 15px 5px rgba(0, 0, 0, 0.48);
+  box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000,
+    5px 5px 15px 5px rgba(0, 0, 0, 0.48);
+}
+
+.bt-start-game:hover {
+  background-color: #ffffff42;
+  transition: 0.1s;
+}
+
+#show-heros {
+  display: none;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 50px;
+  padding: 20px;
+}
+
+.hero-details {
+  width: 300px;
+  -webkit-box-shadow: 5px 5px 30px 10px rgba(220, 220, 220, 0.676);
+  box-shadow: 5px 5px 30px 10px rgba(220, 220, 220, 0.38);
+}
+
+.hero-details:hover {
+  -webkit-box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000,
+    -13px -16px 32px 16px rgba(196, 196, 196, 0),
+    -13px -16px 32px 16px rgba(196, 196, 196, 0);
+  box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000,
+    -13px -16px 32px 16px rgba(196, 196, 196, 0),
+    -13px -16px 32px 16px rgba(196, 196, 196, 0);
+  background: #4631da;
+}
+body#tinymce {
+  background: #ffffff;
+}
+
+.hero-info {
+  text-align-last: center;
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  font-size: 18px;
+  letter-spacing: 2px;
+  word-spacing: 2px;
+  color: #e6e6e6f3;
+  font-weight: 600;
+  text-decoration: overline solid rgb(68, 68, 68);
+  font-style: normal;
+  font-variant: small-caps;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 15px rgba(22, 13, 25, 0.75);
+}
+
+.winner {
+  width: 300px;
+  -webkit-box-shadow: 5px 5px 30px 10px rgb(220 220 220 / 68%);
+  box-shadow: 0px 1px 3px 7px rgb(220 220 220 / 38%);
+}
+
+.winner-hero {
+  display: none;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 50px;
+  padding: 70px;
+}
+
+.winner {
+  text-align-last: center;
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  font-size: 23px;
+  letter-spacing: 5px;
+  word-spacing: 2px;
+  color: #e6e6e6f3;
+  font-style: normal;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 15px rgb(22 13 25 / 75%);
+}
+
+.bt-finish-game {
+  margin: 50px auto 0;
+  display: none;
+  padding: 10px 30px;
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+  background: rgba(220, 220, 220, 0.616);
+  color: black;
+  font-family: Georgia, serif;
+  font-size: 25px;
+  letter-spacing: 2px;
+  word-spacing: 2px;
+  color: #000000;
+  font-weight: normal;
+  text-decoration: none;
+  font-style: normal;
+  font-variant: small-caps;
+  text-transform: uppercase;
+  -webkit-box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000,
+    5px 5px 15px 5px rgba(0, 0, 0, 0.48);
+  box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000,
+    5px 5px 15px 5px rgba(0, 0, 0, 0.48);
+}
+
+.bt-finish-game:hover {
+  background-color: #ffffff42;
+  transition: 0.1s;
+}
+
+.d-none {
+  display: none;
+}
+
+.d-block {
+  display: block;
+}
+
+.d-flex {
+  display: flex !important;
+}
+
+.div-hero-zelda {
+  background: url(images/images1.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+.div-hero-ezio {
+  background: url(images/images2.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+.div-hero-lara {
+  background: url(images/images3.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.div-hero-dead {
+  background: url(images/imagesDead.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
