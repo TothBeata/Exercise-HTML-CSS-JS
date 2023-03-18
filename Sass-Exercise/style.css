@@ -1,0 +1,40 @@
+body {
+  background-color: #ffeeec;
+}
+
+.header-title {
+  color: #55125e;
+}
+
+.sda-navbar {
+  position: absolute;
+  width: 100%;
+  background-color: #661570;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+li {
+  float: left;
+}
+
+a:link, a:visited {
+  display: block;
+  width: 150px;
+  padding: 8px;
+  color: #fff;
+  background-color: #661570;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: bold;
+}
+a:hover, a:active {
+  background-color: #55125e;
+}
+
+/*# sourceMappingURL=style.css.map */

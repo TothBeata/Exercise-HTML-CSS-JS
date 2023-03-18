@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body class="page-comenzi parallax">
+	<canvas id="myCanvas" width="578" height="200">
+		Your browser does not support the HTML canvas tag.
+	</canvas>
+	
+    <div class="menu">
+        <a href="index.html" class="logo">
+            <img src="media/demo-logo.svg" alt="Logo Pizza Brand Name" />
+        </a>
+        <a href="index.html">Acasa</a>
+        <a href="meniu.html">Meniu</a>
+        <a href="rezervari.html">Rezervari</a>
+        <a href="oferta-zilei.html">Oferta zilei</a>
+        <a href="blog.html">Blog</a>
+        <a href="comenzi.html" class="item-comenzi">Comenzi online</a>
+        <a href="contact.html">Contact</a>
+    </div>
+
+	<script type="text/javascript" src="js/script.js"></script>
+	<script>
+		var canvas = document.getElementById('myCanvas');
+		var context = canvas.getContext('2d');
+		// var centerX = canvas.width / 2;
+		// var centerY = canvas.height / 2;
+		// var radius = 70;
+		// context.arc(centerX, centerY, radius, 0, 2 * Math.PI, false);
+		context.beginPath();
+		
+		context.arc(100, 100, 75, 0, 2 * Math.PI, false);
+		context.fillStyle = 'darkgoldenrod';
+		context.fill();
+		context.lineWidth = 5;
+		context.strokeStyle = '#003300';
+		context.stroke();
+		context.beginPath();
+		context.font = "20px Georgia";
+		context.fillStyle = "#fff";
+		context.fillText("Masa 1", 70, 110);
+		context.fill();
+
+		context.beginPath();
+		// context.arc(centerX, centerY, radius, 0, 2 * Math.PI, false);
+		context.arc(300, 100, 75, 0, 2 * Math.PI, false);
+		context.fillStyle = 'darkgoldenrod';
+		context.fill();
+		context.lineWidth = 5;
+		context.strokeStyle = '#003300';
+		context.stroke();
+		context.beginPath();
+		context.font = "20px Georgia";
+		context.fillStyle = "#fff";
+		context.fillText("Masa 2", 270, 110);
+		context.fill();
+	</script> 
+  </body>
+</html>

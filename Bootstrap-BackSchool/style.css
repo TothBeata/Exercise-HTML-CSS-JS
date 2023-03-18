@@ -1,0 +1,7 @@
+body{
+    background-color: #212529;
+}
+
+media screen and (max-width: 576px) {
+    /*Karacsonyi webshop helyett csak ikont jelenitunk meg*/
+}

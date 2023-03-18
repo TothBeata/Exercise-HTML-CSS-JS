@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body class="page-comenzi parallax">
+
+	<div class="login-info">
+		<p>Pentru a putea comanda online produsele noastre trebuie sa te loghezi!</p>
+		<button onclick="showModal('login')">Login</button>
+		<center>sau</center>
+		<button onclick="showModal('register')">Inregistrare</button>
+	</div>
+
+	<div id="modal-login_register" class="modal">
+	  <form id="form-login" class="modal-content animate" action="/login.php" method="post">
+		<div class="imgcontainer">
+		  <span class="btn-close" title="Close Modal" onclick="hideModal()">&times;</span>
+		  <img src="media/user.png" alt="Avatar" class="avatar">
+		</div>
+	
+		<div class="container">
+		  <label for="uname"><b>Username</b></label>
+		  <input type="text" placeholder="Enter Username" name="uname" required>
+	
+		  <label for="psw"><b>Password</b></label>
+		  <input type="password" placeholder="Enter Password" name="psw" required>
+			
+		  <button type="submit">Login</button>
+		  <label>
+			<input type="checkbox" checked="checked" name="remember"> Remember me
+		  </label>
+		  <center>OR</center>
+		  <button type="button" style="margin-top: 50px;" onclick="handleLoginRegisterVisibility('register')">Go to register</button>
+		</div>
+	
+		<div class="container" style="background-color:#f1f1f1">
+		  <button type="button" onclick="hideModal()" class="cancelbtn">Cancel</button>
+		  <span class="psw">Forgot <a href="#">password?</a></span>
+		</div>
+	  </form>
+	  <form id="form-register" class="modal-content animate" action="/register.php" method="post">
+		<div class="imgcontainer">
+		  <span class="btn-close" title="Close Modal" onclick="hideModal()">&times;</span>
+		  <img src="media/user.png" alt="Avatar" class="avatar">
+		</div>
+	
+		<div class="container">
+			<label for="fname"><b>First name</b></label>
+			<input type="text" placeholder="First name" name="fname" required>
+			<label for="lname"><b>Last name</b></label>
+			<input type="text" placeholder="Last name" name="lname" required>
+			<label for="email"><b>Email</b></label>
+			<input type="email" placeholder="Enter your email" name="email" required>
+			<label for="uname"><b>Username</b></label>
+			<input type="text" placeholder="Enter Username" name="uname" required>	
+			<label for="psw"><b>Password</b></label>
+			<input type="password" placeholder="Enter Password" name="psw" required>
+			<label for="confirmPass"><b>Password</b></label>
+			<input type="password" placeholder="Confirm Password" name="confirmPass" required>
+		  	<button type="submit">Register</button>
+			<label>
+				<input type="checkbox" checked="checked" name="remember"> Accept <a href="#">terms & conditions</a>
+			</label>
+			<center>OR</center>
+		  <button type="button" style="margin-top: 50px;" onclick="handleLoginRegisterVisibility('login')">Back to login</button>
+		</div>
+	
+		<div class="container" style="background-color:#f1f1f1">
+		  <button type="button" onclick="hideModal()" class="cancelbtn">Cancel</button>
+		</div>
+	  </form>
+	</div>
+	
+    <div class="menu">
+        <a href="index.html" class="logo">
+            <img src="media/demo-logo.svg" alt="Logo Pizza Brand Name" />
+        </a>
+        <a href="index.html">Acasa</a>
+        <a href="meniu.html">Meniu</a>
+        <a href="rezervari.html">Rezervari</a>
+        <a href="oferta-zilei.html">Oferta zilei</a>
+        <a href="blog.html">Blog</a>
+        <a href="comenzi.html" class="item-comenzi">Comenzi online</a>
+        <a href="contact.html">Contact</a>
+    </div>
+
+	<script type="text/javascript" src="js/script.js"></script>
+  </body>
+</html>

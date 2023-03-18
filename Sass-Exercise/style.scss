@@ -1,0 +1,50 @@
+$body-bg-color: #ffeeec;
+$header-title-color: #55125e;
+//$sda-color: #55125e;
+$navbar-bg-color: #661570;
+$navbar-color: #fff;
+
+
+body {
+    background-color: $body-bg-color;
+}
+
+.header-title {
+    color: $header-title-color;
+}
+
+.sda-navbar {
+    position: absolute;
+    width: 100%;
+    background-color: $navbar-bg-color;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+li {
+    float: left;
+}
+
+a {
+    &:link,
+    &:visited {
+        display: block;
+        width: 150px;
+        padding: 8px;
+        color: $navbar-color;
+        background-color: $navbar-bg-color;
+        text-align: center;
+        text-transform: uppercase;
+        text-decoration: none;
+        font-weight: bold;
+
+    }
+    &:hover,
+    &:active {
+        background-color: $header-title-color;
+    }
+}
