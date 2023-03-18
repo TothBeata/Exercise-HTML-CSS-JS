@@ -1,0 +1,33 @@
+FETCH 
+    URL - string
+    Options - object 
+        Methots:
+            - GET
+            - POST
+            - PUT | PATCH
+            - DELETE
+        Headers - object
+            headers: {
+                "Content-Type": "application/json",
+            },
+    response: 
+        - blob()
+        - text()
+        - json()
+
+- Free API 
+    https://jsonplaceholder.typicode.com/users
+    https://reqres.in/
+    https://api.wheretheiss.at/v1/satellites/25544 
+
+Promise
+
+URL.createObjectURL(blob) - primeste un blob si retuneaza URL pt elementul html din DOM
+then() catch()
+ASYNC / AWAIT 
+
+document.createElement('img');
+documnet.body.append
+element.innerText 
+
+Splice, Slice, Split

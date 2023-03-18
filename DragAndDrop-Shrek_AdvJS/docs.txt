@@ -1,0 +1,32 @@
+PROIECT:
+    Proiect: 
+    1. Avem un set de imagini 
+    2. Implementam functionalitatea de Drag & Drop cu libraria FABRIC intr-un canvas 
+    3. Posibilitatea de resize la imagini (orizontal | vertical | ambele)
+    3. Posibilitatea de rotire a imaginilor 
+    4. Export Canvas to a PDF 
+
+Structura Proiectului 
+    /Proiect-DragAndDrom-FABRIC
+        /css
+        /js
+        /images 
+        index.html
+        doc.txt
+
+Linkuri:
+    http://fabricjs.com/
+    http://fabricjs.com/articles/
+    http://fabricjs.com/demos/
+
+
+EVENTS: 
+    drop     : The drop event is fired when an element or text selection is DROPPED on a valid drop target.
+    dragstart: The dragstart event is fired when the user START DRAGGING an element or text selection
+    dragend  : The dragend event is fired when a DRAG operation is being ENDED (by releasing a mouse button or hitting the escape key).
+    dragover : The dragover event is fired when an element or text selection is being dragged OVER a valid drop target (every few hundred milliseconds).
+               The event is fired on the drop target(s).
+    dragenter: The dragenter event is fired when a dragged element or text selection ENTERS a valid drop target.
+               The target object is the immediate user selection (the element directly indicated by the user as the drop target), or the <body> element.
+    dragleave: The dragleave event is fired when a dragged element or text selection LEAVES a valid drop target.
+               This event is not cancelable.

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fetch Image</title>
+  </head>
+  <body>
+    <img src="" alt="" id="demoImg" />
+    <img src="" alt="" id="demoImg1" />
+
+    <script>
+      /* Then */
+      fetch("demo-img-1.jpg")
+        .then((response) => response.blob())
+        .then((dataImage) => {
+          document.getElementById("demoImg").src =
+            URL.createObjectURL(dataImage);
+        })
+        .catch((error) => console.error(error));
+      /* End */
+
+      /* Await / Async */
+      async function getDemoImage() {
+        const response = await fetch("demo-img-1.jpg");
+        const blob = await response.blob();
+        document.getElementById("demoImg1").src = URL.createObjectURL(blob);
+      }
+      getDemoImage()
+        .then((response) => console.log("Success"))
+        .catch((error) => consle.error(error));
+      /* End */
+    </script>
+  </body>
+</html>

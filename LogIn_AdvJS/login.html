@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proiect Orar</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Varela+Round">
+    <!-- Bootstrap core CSS && Material Design Bootstrap -->
+    <link rel="stylesheet" href="css/mdbootstrap4.compiled.min.css">
+
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+
+    <section class="vh-100">
+        <div class="container-fluid h-custom">
+          <div class="row d-flex justify-content-center align-items-center h-100">
+            <div class="col-md-9 col-lg-6 col-xl-5">
+              <img src="images/draw2.webp" class="img-fluid"
+                alt="Sample image">
+            </div>
+            <div class="col-md-8 col-lg-6 col-xl-4 offset-xl-1">
+              <form>
+                <div class="d-flex flex-row align-items-center justify-content-center justify-content-lg-start">
+                  <p class="lead fw-normal me-3">Login</p>
+                </div>
+
+                <div class="form-outline mb-4">
+                  <input type="text" id="input_username" class="form-control form-control-lg" placeholder="Username" />
+                  <label class="form-label" for="input_username" id="test">Username</label>
+                </div>
+                <div class="form-outline mb-3">
+                  <input type="password" id="input_password" class="form-control form-control-lg" placeholder="Parola" />
+                  <label class="form-label" for="input-password">Parola</label>
+                </div>
+      
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="form-check mb-0">
+                    <input class="form-check-input me-2" type="checkbox" value="" id="input_remeberMe" />
+                    <label class="form-check-label" for="input_remeberMe"> Tine-ma minte </label>
+                  </div>
+                  <a href="javascript:void(0)" class="text-body">Ai uitat parola?</a>
+                </div>
+                <div class="text-center text-lg-start mt-4 pt-2">
+                  <button type="button" id="btn_login" class="btn btn-primary btn-lg" onclick="validateLoginForm()">Login</button>
+                  <p class="small fw-bold mt-2 pt-1 mb-0">Nu aveti cont?
+                    <a href="javascript:void(0)" class="link-danger">Inregistrare</a>
+                  </p>
+                </div>
+                <p id="error_login" class="mt-2 fw-bold link-danger"> </p>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="d-flex flex-column flex-md-row text-center text-md-start justify-content-between py-4 px-4 px-xl-5 bg-primary">
+          <!-- Copyright -->
+          <div class="text-white mb-3 mb-md-0">
+            Copyright © 2022. Sebi Pui SDA 
+          </div>
+          <!-- Copyright -->
+      
+          <!-- Right -->
+          <div>
+            <a href="javascript:void(0)" class="text-white me-4">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="javascript:void(0)" class="text-white me-4">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="javascript:void(0)" class="text-white me-4">
+              <i class="fab fa-google"></i>
+            </a>
+            <a href="javascript:void(0)" class="text-white">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+          </div>
+          <!-- Right -->
+        </div>
+      </section>
+
+
+    <!-- JQuery -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
+    
+    <script type="text/javascript" src="javascript/login.js"></script>
+</body>
+</html>

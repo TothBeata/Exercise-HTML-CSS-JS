@@ -1,0 +1,163 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: url(/images/bg1.webp);
+  background-size: cover;
+}
+
+#btnMusik {
+  position: fixed;
+  margin: -60px 0px;
+  border-radius: 20px;
+  font-weight: bold;
+  align-self: center;
+  background-color: #fff;
+  background-image: none;
+  background-position: 0 90%;
+  background-repeat: repeat no-repeat;
+  background-size: 4px 3px;
+  border-style: solid;
+  border-width: 5px;
+  box-shadow: rgba(0, 0, 0, 0.2) 15px 28px 25px -18px;
+  box-sizing: border-box;
+  color: rgb(35, 64, 66);
+  cursor: pointer;
+  display: inline-block;
+  font-family: Neucha, sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  outline: none;
+  padding: 0.5rem;
+  padding-right: 1.7rem;
+  text-decoration: none;
+  transition: all 235ms ease-in-out;
+  border-bottom-left-radius: 15px 255px;
+  border-bottom-right-radius: 225px 15px;
+  border-top-left-radius: 255px 15px;
+  border-top-right-radius: 15px 225px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+#btnMusik:hover {
+  box-shadow: rgba(0, 0, 0, 0.3) 2px 8px 8px -5px;
+  transform: translate3d(0, 2px, 0);
+}
+
+#btnMusik:focus {
+  box-shadow: rgba(0, 0, 0, 0.3) 2px 8px 4px -6px;
+}
+
+#btnMusik::after {
+  content: "";
+  background: url(/images/playIcon.png) no-repeat center;
+  background-size: 20px;
+  position: absolute;
+  width: 25px;
+  height: 20px;
+}
+
+#pian {
+  height: 300px;
+  background-color: rgb(35, 64, 66);
+  padding: 90px 30px 20px 30px;
+  border-radius: 10px;
+  position: fixed;
+  left: 5%;
+}
+.key {
+  position: relative;
+  transform: scale(0.98);
+}
+
+.black-keys,
+.white-keys {
+  display: flex;
+  position: relative;
+}
+
+.white-keys .key {
+  width: 70px;
+  height: 300px;
+  background-color: #fff;
+  border-radius: 0 0 10px 10px;
+  border: 1px solid #000;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.white-keys .key:hover,
+.white-keys .key:active {
+  box-shadow: 3px 3px 6px rgba(255, 255, 255, 0.9),
+    3px 1px 0px rgba(0, 0, 0, 0.1);
+}
+
+.black-keys .key {
+  width: 40px;
+  height: 160px;
+  background-color: #000;
+  border-radius: 0 0 5px 5px;
+  position: absolute;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.black-keys .key:hover,
+.black-keys .key:active {
+  box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.9), 1px 1px 0px rgba(0, 0, 0, 0.2);
+}
+
+.black-keys .key:nth-child(1) {
+  left: 48px;
+}
+
+.black-keys .key:nth-child(2) {
+  left: 117px;
+}
+
+.black-keys .key:nth-child(3) {
+  left: 259px;
+}
+
+.black-keys .key:nth-child(4) {
+  left: 329px;
+}
+
+.black-keys .key:nth-child(5) {
+  left: 470px;
+}
+
+.black-keys .key:nth-child(6) {
+  left: 540px;
+}
+
+.black-keys .key:nth-child(7) {
+  left: 610px;
+}
+
+.black-keys .key:nth-child(8) {
+  left: 680px;
+}
+
+.black-keys .key:nth-child(9) {
+  left: 820px;
+}
+
+.black-keys .key:nth-child(10) {
+  left: 890px;
+}
+
+/* 
+  
+  
+  
+  left: 625px;
+  left: 700px;
+  left: 770px;
+  left: 845px;
+  left: 915px; */

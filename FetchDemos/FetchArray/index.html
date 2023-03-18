@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fetch Array</title>
+  </head>
+  <body>
+    <h1>Fetch example with array</h1>
+
+    <script>
+      const filenames = [
+        'images/demo-img-1.jpg',
+        'images/demo-img-2.png',
+        'images/demo-img-3.png'
+      ];
+
+      async function getImages(filenames) {
+        for (let filename of filenames) {
+          const response = await fetch(filename);
+          const blob = await response.blob();
+
+          const img = document.createElement('img');
+          img.src = URL.createObjectURL(blob);
+          img.width = '200';
+
+          document.body.append(img);
+        }
+      }
+
+      getImages(filenames)
+        .then(response => console.log('Everything went well!'))
+        .catch(error => {
+          console.log('Something went wrong!');
+          console.error(error);
+        })
+    </script>
+  </body>
+</html>

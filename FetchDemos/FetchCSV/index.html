@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fetch CSV File</title>
+    <style>
+      table {
+        width: 100%;
+        border: 1px solid black;
+        border-collapse: collapse;
+      }
+      table tr {
+      }
+      table tr th {
+        height:40px;
+        background:#000; 
+        color:#fff;
+      }
+      table tr td {
+        border-bottom: 1px solid #000;
+        text-align: center;
+        height: 40px;
+      }
+      table tr:nth-child(odd) {
+        background-color: #DDD;
+      }
+      table tr:nth-child(even) {
+        background-color: #fff;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Fetch CSV File</h1>
+    <table id="temperatureTabel">
+      <thead>
+        <tr>
+          <th>Anul</th>
+          <th>Temperatura in grade Celsius</th>
+          <th>Temperatura in grade Farenheit</th>
+        </tr>
+      </thead>
+      <tbody id="temperatureTabelBody">
+      </tbody>
+    </table>
+
+    <script>
+      function temperatureConverter(temp) {
+        temp = parseFloat(temp);
+        return ((temp-32) / 1.8).toFixed(2);
+      }
+
+      async function getData() {
+        const response = await fetch("temperatures.csv");
+        const data = await response.text();
+
+        const table = data.split("\n").slice(1);
+        table.reverse().forEach((row) => {
+          const cols = row.split(",");
+          const year = cols[0];
+          const globFarenheight = cols[1];
+          const globCelsius =  temperatureConverter(globFarenheight.slice(1));
+          const tableRow = `<tr>
+                              <td>${year}</td>
+                              <td>${globCelsius}</td>
+                              <td>${globFarenheight}</td>
+                            </tr>`;
+          document.getElementById("temperatureTabelBody").innerHTML += tableRow;
+        });
+      }
+      getData();
+    </script>
+  </body>
+</html>
